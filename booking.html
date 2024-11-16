@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Snazzy Paws Grooming</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Book Your Grooming Appointment</h2>
+    <form id="bookingForm">
+      <label for="ownerName">Owner's Name:</label>
+      <input type="text" id="ownerName" name="ownerName" required aria-required="true" aria-label="Enter owner's name">
+    
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required aria-required="true" aria-label="Enter email address">
+    
+      <label for="dogName">Dog's Name:</label>
+      <input type="text" id="dogName" name="dogName" required aria-required="true" aria-label="Enter dog's name">
+    
+      <label for="breed">Breed:</label>
+      <input type="text" id="breed" name="breed" required aria-required="true" aria-label="Enter breed">
+    
+      <label for="age">Dog's Age:</label>
+      <input type="number" id="age" name="age" required aria-required="true" min="0" max="30" aria-label="Enter dog's age">
+  
+      <fieldset>
+        <legend>Select Services (Choose at least one):</legend>
+        <div class="checkbox-group">
+          <div>
+            <input type="checkbox" id="bathBrush" name="services" value="Bath and Brush">
+            <label for="bathBrush"><strong>Bath and Brush</strong><br><span class="price">Price: $25–$50</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="haircut" name="services" value="Haircut">
+            <label for="haircut"><strong>Haircut</strong><br><span class="price">Price: $45–$85</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="nailTrim" name="services" value="Nail Trim">
+            <label for="nailTrim"><strong>Nail Trim</strong><br><span class="price">Price: $10–$20</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="earCleaning" name="services" value="Ear Cleaning">
+            <label for="earCleaning"><strong>Ear Cleaning</strong><br><span class="price">Price: $10–$15</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="teethBrushing" name="services" value="Teeth Brushing">
+            <label for="teethBrushing"><strong>Teeth Brushing</strong><br><span class="price">Price: $10–$15</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="deshedding" name="services" value="De-shedding Treatment">
+            <label for="deshedding"><strong>De-shedding Treatment</strong><br><span class="price">Price: $20–$40</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="fleaTick" name="services" value="Flea and Tick Treatment">
+            <label for="fleaTick"><strong>Flea and Tick Treatment</strong><br><span class="price">Price: $15–$30</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="spaPackage" name="services" value="Spa Package">
+            <label for="spaPackage"><strong>Spa Package</strong><br><span class="price">Price: $75–$150</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="expressService" name="services" value="Express Service">
+            <label for="expressService"><strong>Express Service</strong><br><span class="price">Price: $15–$25</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="medicatedBath" name="services" value="Medicated Bath">
+            <label for="medicatedBath"><strong>Medicated Bath</strong><br><span class="price">Price: $20–$40</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="specialBreedCuts" name="services" value="Special-breed Cuts">
+            <label for="specialBreedCuts"><strong>Special-breed Cuts</strong><br><span class="price">Price varies</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="puppyPackage" name="services" value="Puppy Package">
+            <label for="puppyPackage"><strong>Puppy Package</strong><br><span class="price">Price: $30–$60</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="seniorDogPackage" name="services" value="Senior Dog Package">
+            <label for="seniorDogPackage"><strong>Senior Dog Package</strong><br><span class="price">Price: $40–$80</span></label>
+          </div>
+          <div>
+            <input type="checkbox" id="fullGroomingPackage" name="services" value="Full Grooming Package">
+            <label for="fullGroomingPackage"><strong>Full Grooming Package</strong><br><span class="price">Price: $60–$120</span></label>
+          </div>
+        </div>
+      </fieldset>
+  
+      <button type="submit" aria-label="Submit form">Submit</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>Opening hours: Mon-Sat: 9 AM - 5 PM, Sun: Closed</p>
+  </footer>
+</body>
+</html>
